@@ -122,66 +122,14 @@ window.addEventListener("load", () => {
 });
 
 
-// Function to generate PDF
-function generatePDF() {
-  const pdf = new jsPDF();
-
-  // Add content to the PDF
-  pdf.text(`Name: ${myName}`, 10, 10);
-  pdf.text(`Email: ${localStorage.getItem("email")}`, 10, 20);
-  pdf.text(`Phone: ${localStorage.getItem("phone")}`, 10, 30);
-  pdf.text(`Address: ${localStorage.getItem("address")}`, 10, 40);
-  pdf.text(`Design: ${localStorage.getItem("design")}`, 10, 50);
-  
-  // Add education and experience details
-  const inst1 = localStorage.getItem("inst") + " - " + localStorage.getItem("degree");
-  const inst2 = localStorage.getItem("inst2") + " - " + localStorage.getItem("degree2");
-  
-  pdf.text(`Education:`, 10, 60);
-  pdf.text(inst1 || '', 10, 70);
-  pdf.text(inst2 || '', 10, 80);
-  
-  pdf.text(`Skills:`, 10, 90);
-  pdf.text(localStorage.getItem("skill1") || '', 10, 100);
-  pdf.text(localStorage.getItem("skill2") || '', 10, 110);
-  pdf.text(localStorage.getItem("skill3") || '', 10, 120);
-  pdf.text(localStorage.getItem("skill4") || '', 10, 130);
-  pdf.text(localStorage.getItem("skill5") || '', 10, 140);
-  pdf.text(localStorage.getItem("skill6") || '', 10, 150);
-  
-  // Add language details
-  pdf.text(`Languages:`, 10, 160);
-  pdf.text(localStorage.getItem("language") || '', 10, 170);
-  pdf.text(localStorage.getItem("language2") || '', 10, 180);
-  
-  // Add experience details
-  pdf.text(`Experience:`, 10, 190);
-  pdf.text(`${localStorage.getItem("job")} at ${localStorage.getItem("company")} (${localStorage.getItem("startyear")} - ${localStorage.getItem("endyear")})`, 10, 200);
-  
-  // Achievements
-  pdf.text(`Achievements:`, 10, 210);
-  pdf.text(localStorage.getItem("achvmnt1") || '', 10, 220);
-  pdf.text(localStorage.getItem("achvmnt2") || '', 10, 230);
-  pdf.text(localStorage.getItem("achvmnt3") || '', 10, 240);
-
-  // Save the PDF
-  pdf.save(`${myName}-resume.pdf`);
-}
-
-//PDF Button
-const downloadPdfBtn = document.getElementById('pdfBtn');
-downloadPdfBtn?.addEventListener("click", () => {
-    generatePDF();
-});
-
-
-
-
 // print button
 const printBtn = document.getElementById("printBtn");
 
 printBtn?.addEventListener("click", () => {
+  alert("Click 'Destination' select 'Save as PDF' and save it.")
   window.print();
+  
+  
 });
 
 // edit button

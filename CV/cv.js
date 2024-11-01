@@ -88,7 +88,9 @@ window.addEventListener("load", () => {
 // print button
 const printBtn = document.getElementById("printBtn");
 printBtn?.addEventListener("click", () => {
+    alert("Click 'Destination' select 'Save as PDF' and save it.")
     window.print();
+   
 });
 // edit button
 const editBtn = document.getElementById("editBtn");
