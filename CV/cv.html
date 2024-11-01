@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Form</title>
+    <link rel="stylesheet" href="cv.css" />
+  </head>
+
+  <body>
+    <div class="resumeDiv">
+      <form action="">
+        <header class="header">
+          <div>
+            <h1><span id="resName"></span></h1>
+            <p><span id="resdesign"></span></p>
+          </div>
+          <img id="resprofilePic" src="" alt="" />
+        </header>
+        <div class="content">
+          <aside>
+            <section class="contact">
+              <h2>Contact</h2>
+              <p><strong>Phone</strong></p>
+              <p><span id="resPhone"></span></p>
+              <br />
+              <p><strong>Email</strong></p>
+              <p><span id="resEmail"></span></p>
+              <br />
+              <p><strong>Address</strong></p>
+              <p><span id="resAddress"></span></p>
+            </section>
+            <section class="education">
+              <h2>Education</h2>
+              <p><strong><span id="resDegree"></span></strong></p>
+              <p><span id="resPass"></span></p>
+              <p><span id="resInst"></span></p>
+              <br />
+              <p><strong><span id="resDegree2"></span></strong></p>
+              <p><span id="resInst2"></span></p>
+              <p><span id="resPass2"></span></p>
+            </section>
+            <section class="skills">
+              <h2>Skills</h2>
+              <ul>
+                <li><span id="resSkill1"></span></li>
+                <li><span id="resSkill2"></span></li>
+                <li><span id="resSkill3"></span></li>
+                <li><span id="resSkill4"></span></li>
+                <li><span id="resSkill5"></span></li>
+                <li><span id="resSkill6"></span></li>
+              </ul>
+            </section>
+
+            <section class="language">
+              <h2>Language</h2>
+            </section>
+            <p><span id="resLang1"></span></p>
+            <p><span id="resLang2"></span></p>
+          </aside>
+
+          <main class="main">
+
+            <section class="experience">
+              <h2>Experience</h2>
+              <div class="experience-Div">
+                <p><span id="resStartYear"></span>- <span id="resEndYear"></span></p>
+                <p><strong><span id="resCompany"></span> | <span id="resCompanyLoc"></span></strong></p>
+                <p><span id="resJob"></span></p>
+                <ul>
+                  <li><span id="resachvmnt1"></span></li>
+                  <li><span id="resachvmnt2"></span></li>
+                  <li><span id="resachvmnt3"></span></li>
+                </ul>
+              </div>
+
+              
+            <section class="reference">
+              <h2>Reference</h2>
+              <p>Will be furnished upon request.</p>
+            </section>
+          </main>
+        </div>
+      </form>
+    </div>
+    <div class="buttonDiv">
+      <button id="pdfBtn" class="btn">PDF</button>
+      <button id="editBtn" class="btn">Edit</button>
+      <a href="" id="anc"><button id="shareBtn" class="btn">Share</button></a>
+      <button id="copyBtn" class="btn">Copy Link</button>
+    </div>
+    <script src="cv.js"></script>
+  </body>
+</html>

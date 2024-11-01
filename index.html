@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dynamic Resume Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!--<div class="container">-->
+  <div class="heading mar-20">
+    <h1>Dynamic Resume Generator</h1>
+  </div>
+
+  <form id="resume-form">
+    <div class="form-group">
+      <h3>Personal Information</h3>
+      <hr style="margin-bottom: 20px" />
+
+      <div class="form-group">
+        <label class="label" for="pic">Profile Picture:</label>
+        <input class="input" type="file" id="pic" required /><br />
+      </div>
+
+      <div class="form-group">
+        <label class="label" for="full-name">Full Name:</label>
+        <input class="input" type="text" id="full-name" required placeholder="Enter your full-name" /><br />
+      </div>
+
+      <div class="form-group">
+        <label class="label" for="design">Designation:</label>
+        <input class="input" type="text" id="design" required placeholder="Enter your Designation" /><br />
+      </div>
+
+      <div class="form-group">
+        <label class="label" for="email">Email:</label>
+        <input class="input" type="email" id="email" required placeholder="Enter your email address" /><br />
+      </div>
+
+      <div class="form-group">
+        <label class="label" for="phone">Phone Number:</label>
+        <input class="input" type="number" id="phone" required placeholder="Enter your phone Number" /><br />
+      </div>
+
+      <div class="form-group">
+        <label class="label" for="address">Address:</label>
+        <input class="input" type="text" id="address" placeholder="Enter your Desitination" /><br />
+      </div>
+
+      <h3>Education</h3>
+      <hr style="margin-bottom: 20px" />
+      <div>
+        <div class="form-group">
+          <label class="label" for="pass">Passing Year:</label>
+          <input class="input" type="number" id="pass" placeholder="Enter your Passing year" /><br />
+        </div>
+
+        <div class="form-group">
+          <label class="label" for="inst">Institution:</label>
+          <input class="input" type="text" id="inst" placeholder="Enter your Institute Name" /><br />
+        </div>
+        <div class="form-group">
+          <label class="label" for="degree">Degree:</label>
+          <input class="input" type="text" id="degree" placeholder="Enter your Degree Name" /><br />
+        </div>
+      </div>
+
+      <div>
+        <div class="form-group">
+          <label class="label" for="pass2">Passing Year:</label>
+          <input class="input" type="number" id="pass2" placeholder="Enter your Passing year" /><br />
+        </div>
+
+        <div class="form-group">
+          <label class="label" for="inst2">Institution:</label>
+          <input class="input" type="text" id="inst2" placeholder="Enter your Institute Name" /><br />
+        </div>
+        <div class="form-group">
+          <label class="label" for="degree2">Degree:</label>
+          <input class="input" type="text" id="degree2" placeholder="Enter your Degree Name" /><br />
+        </div>
+      </div>
+
+      <h3>Skills</h3>
+      <hr style="margin-bottom: 20px" />
+
+      <div class="form-group">
+        <!-- <label for="skills">Skills:</label> -->
+        <input class="input mar-20" type="text" id="skill-1" placeholder="HTML" />
+        <input class="input mar-20" type="text" id="skill-2" placeholder="CSS, Tailwind CSS" />
+        <input class="input mar-20" type="text" id="skill-3" placeholder="Typescript" />
+        <input class="input mar-20" type="text" id="skill-4" placeholder="Next.JS" />
+        <input class="input mar-20" type="text" id="skill-5" placeholder="Pythone" />
+        <input class="input mar-20" type="text" id="skill-6" placeholder="MS Office" />
+      </div>
+
+      <h3>Languages</h3>
+      <hr style="margin-bottom: 20px" />
+
+      <div class="form-group">
+        <input class="input mar-20" type="text" id="language" placeholder="Enter your language" />
+        <input class="input mar-20" type="text" id="language2" placeholder="Enter your language" />
+      </div>
+      <h3>Expererience</h3>
+      <hr style="margin-bottom: 20px" />
+
+      <div class="form-group">
+        <label class="label" for="start-year">Start Year:</label>
+        <input class="input mar-20" type="number" id="start-year" placeholder="mm/dd/yyyy" />
+
+        <label class="label" for="end-year">End Year:</label>
+        <input class="input mar-20" type="number" id="end-year" placeholder="mm/dd/yyyy" />
+
+        <label class="label" for="company">company:</label>
+        <input class="input mar-20" type="text" id="company" placeholder="Enter your Company Name" />
+        <label class="label" for="company-loc">Company Location:</label>
+        <input class="input mar-20" type="text" id="company-loc" placeholder="Enter your Company Location" />
+        <label class="label" for="job">Job Tittle:</label>
+        <input class="input mar-20" type="text" id="job" placeholder="Enter your Job Tittle" />
+
+        <label class="label" for="achvmnt">Achievement:</label>
+        <input class="input mar-20" type="text" id="achvmnt-1" placeholder="Developrd new features" />
+
+        <input class="input mar-20" type="text" id="achvmnt-2" placeholder="implemented new features" />
+        <input class="input mar-20" type="text" id="achvmnt-3" placeholder="Debugged existing code" /> <br>
+        <hr style="margin-bottom: 20px" />
+        <div class="btnDiv"><input id="submitBtn" type="submit" class="submit"></div>
+
+
+      </div>
+  </form>
+
+  <br />
+
+
+</body>
+<script src="main.js"></script>
+
+</html>
