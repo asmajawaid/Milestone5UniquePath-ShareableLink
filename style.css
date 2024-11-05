@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #fad899;
+  background-image: linear-gradient(#2d5986, #475877, #6699cc, #1d3956);
   width: 100%;
   padding: 2%;
   display: flex;
@@ -18,10 +18,13 @@ form {
   margin: auto;
   width: 50%;
   padding: 2%;
-  background-color: #FFE5B4;
+  background-color: #AEC6CF;
   border-radius: 16;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
   max-width: 600px;
+}
+.heading, h3{
+  color: #05090f;
 }
 
 .form-group {
@@ -47,14 +50,14 @@ form {
     margin-top: 10px;
     color: black; */
     &:focus{
-      border: 2px solid #473f0e;
+      border: 2px solid #0b1320;
     }
 }
 .mar-20{
   margin-bottom: 20px;
 }
 .submit{
-  background-color: #473f0e;
+  background-color: #475877;
   color: beige;
   font-size: 18px;
   padding: 12px;
@@ -63,7 +66,7 @@ form {
   border: none;
   width: 60%;
  &:hover{
-  background-color: #fdc152;
+  background-color: #0b1320;
   color: beige;
  }
  &:active{
@@ -74,3 +77,74 @@ form {
 
   text-align: center;
 }
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 576px) {
+  /* extra small devices */
+  body {
+    padding: 10px;
+  }
+ form {
+    width: 90%;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+  }
+  h2,
+  p {
+    font-size: 1rem;
+  }
+  .btn {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  /* small devices */
+  body {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+  }
+  form{
+    width: 90%;
+  }
+ 
+  .btnDiv {
+    font-size: 10px;
+}
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  /* medium devices */
+  body{
+    width: 100%;
+  }
+  form{
+    width: 90%;
+  }
+  h1{
+    font-size: 1.5em;
+  }
+ 
+  .Div{
+  font-size: 12px;
+}
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  /* large devices */
+  body {
+    width: 100%;
+    height: auto;
+  }
+ form{
+  width: 90%;
+ }
+}
+
+@media screen and (min-width: 1201px) {
+  /*Extra large devices */
+}
+
